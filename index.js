@@ -8,6 +8,6 @@ app.get('/', (req, res) => {
 }); 
 
 //dynamic port binding
-const PORT = porcess.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT);
 // http://localhost:5000/
