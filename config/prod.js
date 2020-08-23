@@ -4,7 +4,7 @@ module.exports = {
   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
   //ID,secret, db_name都不加<>
   mongoURI: process.env.MONGO_URI,
-  cookieKey: process.env.COOKEI_KEY
+  cookieKey: process.env.COOKIE_KEY
 };
 
 //mongodb+srv://myUser:Fjcx0jvhpmQsryUV@cluster0.13u5t.mongodb.net/Emialy-prod?retryWrites=true&w=majority
