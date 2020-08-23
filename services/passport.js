@@ -26,7 +26,8 @@ passport.use(
         //D必须要大写
         clientID:keys.googleClientID,
         clientSecret:keys.googleClientSecret,
-        callbackURL:'/auth/google/callback'
+        callbackURL:'/auth/google/callback',
+        proxy: true
         }, 
     //arrow function
         (accessToken, refreshToken, profile, done) =>  {
