@@ -7,8 +7,9 @@ module.exports = {
   cookieKey: process.env.COOKIE_KEY
 };
 
-//mongodb+srv://myUser:Fjcx0jvhpmQsryUV@cluster0.13u5t.mongodb.net/Emialy-prod?retryWrites=true&w=majority
 
 //google Oauth
 //Client ID 499844575134-p8fup03dv1n3kdlcchv19i8hs71gddnq.apps.googleusercontent.com
 //Client Secret bXlk65-McyzCZi46md6j6JOs
+
+//mongodb+srv://myUser:ZLHCJCK2ROg6hXiv@cluster0.z9l8d.mongodb.net/Emialy-prod?retryWrites=true&w=majority

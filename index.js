@@ -17,12 +17,12 @@ mongoose.connect(keys.mongoURI);
 const app = express();
 //第一个require返回一个function，后面紧接着输入argument去调用它 
 
-app.use(cookieSession({
-    maxAge: 30 * 24 * 60 * 60 * 1000,
-    keys: [keys.cookieKey]
-})
-);
-
+app.use(
+    cookieSession({
+      maxAge: 30 * 24 * 60 * 60 * 1000,
+      keys: [keys.cookieKey]
+    })
+  );
 app.use(passport.initialize());
 app.use(passport.session());
 

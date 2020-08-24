@@ -9,11 +9,14 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "server": "nodemon index.js",
+    "client": "cd client && yarn run start",
+    "dev": "concurrently \"npm run server\" \"cd client && yarn run start\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^5.3.0",
     "cookie-session": "^1.4.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.0",
