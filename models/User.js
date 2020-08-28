@@ -5,7 +5,8 @@ const { Schema } = mongoose;
 
 //虽然mongodb中可以有不同的properties，但是mongoose必须先写出所有的properties
 const userSchema = new Schema ({
-    googleId: String
+    googleId: String,
+    credits: {type: Number, default: 0} 
 });
 
 //第一个参数是collection的名字，第二个是schema的名字

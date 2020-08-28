@@ -4,7 +4,9 @@ module.exports = {
   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
   //ID,secret, db_name都不加<>
   mongoURI: process.env.MONGO_URI,
-  cookieKey: process.env.COOKIE_KEY
+  cookieKey: process.env.COOKIE_KEY,
+  stripePublishableKey:process.env.STRIPE_PUBLISHABLE_KEY,
+  stripeSecretKey: process.env.STRIPE_SECRET_KEY
 };
 
 
