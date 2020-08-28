@@ -29,14 +29,16 @@ class App extends Component{
                         {/* always visiable components,因为header中没有任何configuration而且在第一个 */}
                         <Header /> 
                         {/* matching routes with exact */}
-                        <Route exact path="/" component={Landing} />
-                        <Route exact path="/surveys" component={Dashboard} />
-                        <Route path="/surveys/new" component={SurveyNew} />
+                        <Route exact  path = "/" component={Landing} />
+                        <Route exact  path = "/surveys" component={Dashboard} />
+                        <Route path = "/surveys/new" component={SurveyNew} />
+
+
                     </div>
                 </BrowserRouter>
             </div>
         );
     }
-}
+};
 
 export default connect(null, actions)(App);

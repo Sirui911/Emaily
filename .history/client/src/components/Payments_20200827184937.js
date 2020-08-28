@@ -6,6 +6,7 @@ import * as actions from '../actions';
 class Payments extends Component {
     render(){
         //为了看下面这这一堆生成的是啥样的js code
+        // debugger;
         return(
             //默认用的是dollar,单位是cents
             <StripeCheckout
