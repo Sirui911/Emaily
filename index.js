@@ -10,6 +10,7 @@ const passport = require('passport');
 const bodyParser = require('body-parser');
 
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 
 //connect mongoose and mongo
@@ -46,6 +47,7 @@ if (process.env.NODE_ENV === 'production') {
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
  
 //dynamic port binding
 const PORT = process.env.PORT || 5000;
