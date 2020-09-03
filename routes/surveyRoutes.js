@@ -95,4 +95,3 @@ module.exports = app => {
     });
 };
 
-//sendGrid API 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
